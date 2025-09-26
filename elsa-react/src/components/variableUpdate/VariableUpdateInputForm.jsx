@@ -150,6 +150,7 @@ const VariableItem = ({variable, variables, shapeStatus}) => {
         return (<>
           <Form.Item
             className='jade-form-item'
+            name={`textarea-item-${item.id}`}
             rules={[{required: true, message: t('fieldValueCannotBeEmpty')}]}
             initialValue={item.value}
             validateTrigger='onBlur'
